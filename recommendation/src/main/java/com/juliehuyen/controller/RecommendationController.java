@@ -19,7 +19,7 @@ public class RecommendationController {
         this.recommendationService = recommendationService;
     }
 
-    @GetMapping("/product/{id}")
+    @GetMapping("/products/{id}")
     public ResponseEntity<RecommendationDto> getRecommendationByProductId(@PathVariable("id") Long productId) {
         Recommendation recommendation = recommendationService.getRecommendationByProductId(productId);
         RecommendationDto recommendationDto = RecommendationDto.mapToDTO(recommendation);
