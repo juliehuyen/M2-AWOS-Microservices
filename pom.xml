@@ -19,6 +19,7 @@
   </properties>
   <dependencyManagement>
     <dependencies>
+
       <!-- Spring Boot BOM -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
