@@ -11,8 +11,8 @@ public class DataInitializer {
 
     public DataInitializer(ProductRepository productRepository) {
         productRepository.saveAll(List.of(
-                Product.builder().id(1L).name("Product 1").weight(1).build(),
-                Product.builder().id(2L).name("Product 2").weight(2).build()
+                Product.builder().id(1L).name("Frites").weight(1).build(),
+                Product.builder().id(2L).name("Salade").weight(2).build()
         ));
     }
 }

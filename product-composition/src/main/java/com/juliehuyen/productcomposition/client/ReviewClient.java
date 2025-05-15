@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface ReviewClient {
 
     @GetMapping("/reviews/{id}")
-    ReviewDto getReviewById(@PathVariable("id") Long id);
+    ReviewDto getReviewByProductId(@PathVariable("id") Long productId);
 }

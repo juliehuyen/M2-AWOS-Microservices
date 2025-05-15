@@ -26,7 +26,7 @@ public class ProductCompositionServiceImpl implements ProductCompositionService 
         ProductDto product = productClient.getProductById(productId);
 
         // Récupérer une review en appelant l'API
-        ReviewDto review = reviewClient.getReviewById(productId);
+        ReviewDto review = reviewClient.getReviewByProductId(productId);
 
         // Récupérer une recommendation en appelant l'API
         RecommendationDto recommendation = recommendationClient.getRecommendationByProductId(productId);
