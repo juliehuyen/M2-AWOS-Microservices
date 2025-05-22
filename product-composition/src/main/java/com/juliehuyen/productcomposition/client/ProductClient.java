@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "product-service", url = "http://localhost:8081")
+@FeignClient(name = "product-service", url = "http://localhost:8081") // On n'est pas obligé de mettre l'url car c'est déjà renseigné dans le registry Eureka
 public interface ProductClient {
 
     @GetMapping("/products/{id}")
